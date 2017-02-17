@@ -1,0 +1,8 @@
+{
+	"schedule": {
+		"currentWeather": "* * * * *"
+	},
+	"city": {
+		"name": "Sendenhorst"
+	}
+}
