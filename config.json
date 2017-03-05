@@ -3,7 +3,7 @@
 		"port": 3000
 	},
 	"schedule": {
-		"currentWeather": "* * * * *"
+		"currentWeather": "* 1 * * *"
 	},
 	"city": {
 		"name": "Sendenhorst"
