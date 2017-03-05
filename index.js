@@ -14,9 +14,9 @@ var config = require('./config');
 
 // global objects
 var log = bunyan.createLogger({name: 'twitter-weatherbot'});
+app.listen(config.app.port, function () {
+	log.info(sprintf('Twitter weather bot is running on port %s!', config.app.port));
 
-app.listen(3000, function () {
-	log.info('Twitter weather bot is running on port 3000!');
 	console.log(sprintf('http://api.openweathermap.org/data/2.5/weather?q=%s&APPID=%s', config.city.name, weatherAPI.token));
 	// current weather tweet
 	cron.schedule(config.schedule.currentWeather, function(){
